@@ -4,7 +4,7 @@
 [![build status](https://api.travis-ci.org/JamesKyburz/dev-sqs.svg)](https://travis-ci.org/JamesKyburz/dev-sqs)
 [![Docker Build Status](https://img.shields.io/docker/build/jameskyburz/dev-sqs.svg)]()
 [![downloads](https://img.shields.io/npm/dm/dev-sqs.svg)](https://npmjs.org/package/dev-sqs)
-[![Docker Pulls](https://img.shields.io/docker/pulls/jameskyburz/dev-sqs.svg)]()
+[![Docker Pulls](https://img.shields.io/docker/pulls/jameskyburz/dev-sqs.svg)]() [![Greenkeeper badge](https://badges.greenkeeper.io/JamesKyburz/dev-sqs.svg)](https://greenkeeper.io/)
 
 # local development sqs
 
