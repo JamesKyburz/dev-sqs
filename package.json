@@ -1,6 +1,6 @@
 {
   "name": "dev-sqs",
-  "version": "0.0.3",
+  "version": "0.0.6",
   "scripts": {
     "start": "node src/index",
     "missing": "npx dependency-sync src/index.js --debug --once",
