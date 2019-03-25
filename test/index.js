@@ -139,7 +139,7 @@ test('send and receive 5000 messages using sendMessageBatch, receiveMessage and 
   const sum = payloads.reduce((a, b) => a + b)
   messageCount = 0
   const poll = () => {
-    sqs.receiveMessage({ QueueUrl: q, WaitTimeSeconds: 0.1 }, (err, data) => {
+    sqs.receiveMessage({ QueueUrl: q, WaitTimeSeconds: 0.4 }, (err, data) => {
       t.error(err)
       const { Messages: messages } = data
       if (!messages) {
