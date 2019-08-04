@@ -1,4 +1,4 @@
-FROM jameskyburz/node:10.15.3-alpine-devtools as devtools
+FROM jameskyburz/node:10.16.1-alpine-devtools as devtools
 
 LABEL maintainer="James Kyburz james.kyburz@gmail.com"
 
@@ -9,7 +9,7 @@ ENV NPM_CONFIG_LOGLEVEL warn
 COPY package.json package-lock*.json npm-shrinkwrap*.json /usr/src/app/
 RUN npm i
 
-FROM node:10.15.3-alpine
+FROM node:10.16.1-alpine
 
 WORKDIR /usr/src/app
 
