@@ -1,6 +1,6 @@
 {
   "name": "dev-sqs",
-  "version": "0.0.18",
+  "version": "0.0.20",
   "repository": {
     "type": "git",
     "url": "git://github.com/jameskyburz/dev-sqs.git"
