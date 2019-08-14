@@ -32,7 +32,7 @@
   ],
   "devDependencies": {
     "aws-sdk": "2.439.0",
-    "rimraf": "2.6.3",
+    "rimraf": "2.7.0",
     "tap": "14.1.0"
   },
   "license": "Apache-2.0"
