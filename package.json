@@ -18,7 +18,7 @@
     "level": "5.0.1",
     "server-base": "6.1.5",
     "stream-collector": "1.0.1",
-    "uuid": "3.3.2",
+    "uuid": "3.3.3",
     "xml-escape": "1.1.0"
   },
   "files": [
