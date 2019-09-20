@@ -16,9 +16,9 @@
   },
   "dependencies": {
     "level": "5.0.1",
-    "server-base": "6.1.5",
+    "server-base": "7.0.62",
     "stream-collector": "1.0.1",
-    "uuid": "3.3.2",
+    "uuid": "3.3.3",
     "xml-escape": "1.1.0"
   },
   "files": [
@@ -32,8 +32,8 @@
   ],
   "devDependencies": {
     "aws-sdk": "2.532.0",
-    "rimraf": "2.6.3",
-    "tap": "14.1.0"
+    "rimraf": "3.0.0",
+    "tap": "14.6.4"
   },
   "license": "Apache-2.0"
 }
