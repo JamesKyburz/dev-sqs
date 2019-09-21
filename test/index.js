@@ -7,27 +7,32 @@ const http = require('http')
 
 let server
 
-test('start server', t => {
-  rimraf('/tmp/sqs-db', err => {
-    t.error(err, 'remove db')
-    server = spawn(
-      'node',
-      [path.join(__dirname, '../src')],
-      process.env.DEBUG
-        ? {
-          stdio: 'inherit'
-        }
-        : {}
-    )
-    process.on('exit', server.kill.bind(server))
-    ;(function ping () {
-      const request = http.get('http://localhost:9324/ping', res => {
-        if (res.statusCode === 200) return t.end()
-        setTimeout(ping, 300)
-      })
-      request.on('error', setTimeout.bind(null, ping, 300))
-    })()
+!process.env.NO_SERVER &&
+  test('start server', t => {
+    rimraf('/tmp/sqs-db', err => {
+      t.error(err, 'remove db')
+      server = spawn(
+        'node',
+        [path.join(__dirname, '../src')],
+        process.env.DEBUG
+          ? {
+              stdio: 'inherit'
+            }
+          : {}
+      )
+      process.on('exit', server.kill.bind(server))
+      t.end()
+    })
   })
+
+test('server ready', t => {
+  ;(function ping () {
+    const request = http.get('http://localhost:9324/ping', res => {
+      if (res.statusCode === 200) return t.end()
+      setTimeout(ping, 300)
+    })
+    request.on('error', setTimeout.bind(null, ping, 300))
+  })()
 })
 
 test('create queue', t => {
@@ -192,7 +197,8 @@ test('send and receive 5000 messages using sendMessageBatch, receiveMessage and 
   }
 })
 
-test('stop server', t => {
-  if (server) server.kill()
-  t.end()
-})
+!process.env.NO_SERVER &&
+  test('stop server', t => {
+    if (server) server.kill()
+    t.end()
+  })
