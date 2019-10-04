@@ -3,7 +3,7 @@
 [![npm version](https://img.shields.io/npm/v/dev-sqs.svg)](https://npm.im/dev-sqs)
 [![js-standard-style](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://github.com/feross/standard)
 [![build status](https://api.travis-ci.org/JamesKyburz/dev-sqs.svg)](https://travis-ci.org/JamesKyburz/dev-sqs)
-[![Docker Build Status](https://github.com/jameskyburz/dev-sqs/workflows/Docker%20Image%20CI/badge.svg)](https://github.com/JamesKyburz/dev-sqs/tree/master/.github/workflows)
+[![Docker Build Status](https://github.com/jameskyburz/dev-sqs/workflows/Docker%20Image%20CI/badge.svg)](https://github.com/JamesKyburz/dev-sqs/actions?workflow=Docker+Image+CI)
 [![downloads](https://img.shields.io/npm/dm/dev-sqs.svg)](https://npmjs.org/package/dev-sqs)
 [![Docker Pulls](https://img.shields.io/docker/pulls/jameskyburz/dev-sqs.svg)](<>) [![Greenkeeper badge](https://badges.greenkeeper.io/JamesKyburz/dev-sqs.svg)](https://greenkeeper.io/)
 
