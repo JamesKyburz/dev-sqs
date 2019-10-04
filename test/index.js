@@ -16,8 +16,8 @@ let server
         [path.join(__dirname, '../src')],
         process.env.DEBUG
           ? {
-              stdio: 'inherit'
-            }
+            stdio: 'inherit'
+          }
           : {}
       )
       process.on('exit', server.kill.bind(server))
