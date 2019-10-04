@@ -24,6 +24,7 @@
   "files": [
     "src"
   ],
+  "main": "src/index.js",
   "keywords": [
     "aws",
     "sqs",
