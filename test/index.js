@@ -16,8 +16,8 @@ let server
         [path.join(__dirname, '../src')],
         process.env.DEBUG
           ? {
-            stdio: 'inherit'
-          }
+              stdio: 'inherit'
+            }
           : {}
       )
       process.on('exit', server.kill.bind(server))
@@ -195,6 +195,17 @@ test('send and receive 5000 messages using sendMessageBatch, receiveMessage and 
       t.error(err)
     })
   }
+})
+
+test('non supported function', t => {
+  t.plan(1)
+  const sqs = SQS()
+  const params = {
+    QueueUrl: 'http://localhost:9324/queue/q'
+  }
+  sqs.purgeQueue(params, err => {
+    t.equals(err.message, 'Bad Request')
+  })
 })
 
 !process.env.NO_SERVER &&
