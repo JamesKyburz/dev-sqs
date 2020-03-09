@@ -15,10 +15,10 @@
     "test": "tap test/index.js"
   },
   "dependencies": {
-    "level": "6.0.0",
-    "server-base": "7.0.110",
+    "level": "6.0.1",
+    "server-base": "7.1.2",
     "stream-collector": "1.0.1",
-    "uuid": "3.3.3",
+    "uuid": "7.0.2",
     "xml-escape": "1.1.0"
   },
   "files": [
@@ -32,9 +32,9 @@
     "queue"
   ],
   "devDependencies": {
-    "aws-sdk": "2.597.0",
-    "rimraf": "3.0.0",
-    "tap": "14.10.5"
+    "aws-sdk": "2.635.0",
+    "rimraf": "3.0.2",
+    "tap": "14.10.6"
   },
   "license": "Apache-2.0"
 }
