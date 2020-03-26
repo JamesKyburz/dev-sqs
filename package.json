@@ -32,7 +32,7 @@
     "queue"
   ],
   "devDependencies": {
-    "aws-sdk": "2.642.0",
+    "aws-sdk": "2.647.0",
     "rimraf": "3.0.2",
     "tap": "14.10.6"
   },
