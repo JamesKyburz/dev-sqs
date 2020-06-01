@@ -16,7 +16,7 @@
   },
   "dependencies": {
     "level": "6.0.1",
-    "server-base": "7.1.2",
+    "server-base": "7.1.22",
     "stream-collector": "1.0.1",
     "uuid": "7.0.2",
     "xml-escape": "1.1.0"
