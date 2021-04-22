@@ -15,7 +15,7 @@
     "test": "tap test/index.js"
   },
   "dependencies": {
-    "level": "6.0.1",
+    "level": "7.0.0",
     "server-base": "7.1.22",
     "stream-collector": "1.0.1",
     "uuid": "8.1.0",
